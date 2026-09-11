@@ -1,0 +1,22 @@
+function Student(props) {
+  return (
+    <div>
+      <h2>{props.name}</h2>
+      <p>Course: {props.course}</p>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <h1>React Components and Props</h1>
+
+      <Student name="Sanika" course="BCA" />
+      <Student name="Rahul" course="BCA" />
+      <Student name="Priya" course="BCA" />
+    </div>
+  );
+}
+
+export default App;

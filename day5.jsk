@@ -1,0 +1,26 @@
+function App() {
+  const students = ["Sanika", "Rahul", "Priya", "Amit"];
+  const isAvailable = true;
+
+  return (
+    <div>
+      <h1>Student List</h1>
+
+      <h2>Students:</h2>
+
+      <ul style={{ listStyleType: "none" }}>
+  {students.map((student, index) => (
+    <li key={index}>{student}</li>
+  ))}
+</ul>
+
+      {isAvailable ? (
+        <p>Students are available.</p>
+      ) : (
+        <p>No students available.</p>
+      )}
+    </div>
+  );
+}
+
+export default App;
